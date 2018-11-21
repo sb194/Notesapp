@@ -1,0 +1,76 @@
+.notesHeader{
+    margin: 50px auto;
+    text-align: center;
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    color: #333;
+    opacity: 0.4;
+    font: 700 80px '';
+    background: #7b7a7a;
+	}
+	
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin : 0;
+}
+span {
+    display: inline-block;
+}
+.noteName{
+    background-color: #f0f7fb;
+    border-left: solid 4px #3498db;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+.noteText{
+	    background-color: #f0f7fb;
+    border-left: solid 4px #3498db;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 12px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 2; */
+    /* -webkit-box-orient: vertical; */
+        width: 100%;
+    box-sizing: border-box;
+    /* width: 200px; */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis
+}
+.notes{
+	    border: solid white;
+    margin: 34px;
+    /* border: 1px; */
+    border-radius: 11px;
+    border-color: #e2e6e6;
+	cursor:pointer
+}
+div:focus{
+	outline:none;
+}
+.removebtn{
+	margin-left: -25px;
+    position: absolute;
+	padding:3px;
+	cursor:pointer
+}
+.fa-times {
+  color: red;
+}
+.fa-plus{
+  color: green;
+}
+.addMoreNotes{
+	margin-left:5%;
+	padding:3px;
+	cursor:pointer
+}
