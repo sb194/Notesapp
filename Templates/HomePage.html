@@ -18,7 +18,6 @@
 	<button id="removenote" class="removebtn" data-bind="click: $parent.removeNote" title="Delete"><i class="fas fa-times"></i></button>
         <span class = "noteName" data-bind="text: name"> </span>
 		<span class = "noteText" data-bind="text: content"> </span>
-        <!-- <a href="#" class = "removeButton" data-bind="click: $parent.removeNote">Remove</a> -->
 		</div>
     </li>
 </ul>
@@ -51,7 +50,8 @@
   url_for('static', filename='js/Home.js') }}"></script>
   
   <script>
-    var AllNotes = JSON.parse('{{ Notes | tojson | safe}}');
+    var safeString = jsonEscape('{{ Notes | tojson | safe}}');
+    var AllNotes = JSON.parse(safeString);
 	Createmodel(AllNotes);
 
   </script>
